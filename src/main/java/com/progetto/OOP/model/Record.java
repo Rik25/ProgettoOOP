@@ -1,7 +1,10 @@
 package com.progetto.OOP.model;
 
 import java.util.Date;
-
+/** Rappresenta la classe i cui oggetti cotengono i dati di un 
+ * record.
+ * @author Riccardo Iobbi
+*/
 public class Record {
 	
 	private String citta;
