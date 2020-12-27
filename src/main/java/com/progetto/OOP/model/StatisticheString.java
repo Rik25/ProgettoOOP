@@ -1,5 +1,11 @@
 package com.progetto.OOP.model;
 
+/** Rappresenta la classe i cui oggetti sono la risposta 
+ * alla richiesta Statistiche su valori String.
+ * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
+*/
+
 public class StatisticheString extends Statistiche {
 	int percentuale;
 	int contatore;
