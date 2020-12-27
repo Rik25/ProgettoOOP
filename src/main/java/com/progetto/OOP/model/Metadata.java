@@ -3,6 +3,7 @@ package com.progetto.OOP.model;
  * Rappresenta la classe i cui oggetti cotengono alias assegnato,
  * nome della colonna e tipo di dato.
  * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
  *
  */
 public class Metadata {

@@ -4,6 +4,7 @@ import java.util.Date;
 /** Rappresenta la classe i cui oggetti cotengono i dati di un 
  * record.
  * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
 */
 public class Record {
 	

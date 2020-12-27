@@ -7,6 +7,7 @@ import com.progetto.OOP.model.Metadata;
 /**
  * Rappresenta la classe che gestisce la memoria dell'applicazione.
  * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
  *
  */
 
