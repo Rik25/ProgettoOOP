@@ -1,5 +1,11 @@
 package com.progetto.OOP.model;
 
+/** Rappresenta la classe i cui oggetti sono la risposta 
+ * alla richiesta Statistiche su valori numerici.
+ * @author Lorenzo Benenchia
+ * @author Riccardo Iobbi
+*/
+
 public class StatisticheNum extends Statistiche{
 	
 	public double media;
