@@ -24,6 +24,7 @@ public class CSVparsingclass {
 	 * @param csvFile percorso del file da cui recuperare le informazioni.
 	 * @return ArrayList di Record.
 	*/
+	//manca da gestire la data!!!
 	public static ArrayList<Record> RunParsing(String csvFile){
 		
 		int riga = 1;
