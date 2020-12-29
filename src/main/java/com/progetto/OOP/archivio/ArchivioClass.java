@@ -1,7 +1,13 @@
 package com.progetto.OOP.archivio;
 
+import java.io.InputStream;
+import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import com.progetto.OOP.model.Record;
+import com.progetto.OOP.service.CSVparsingclass;
 import com.progetto.OOP.model.Metadata;
 
 /**
@@ -47,6 +53,15 @@ public class ArchivioClass {
 	
 	public ArrayList<Metadata> getMetadata() {
 		return metadata;
+		
+	}
+	
+	/**
+	 * Effettua la richiesta di parsing del file CSV e popola l'ArrayList di record
+	 */
+	
+	public static void setRecordCSV(){
+		records = CSVparsingclass.RunParsing("FileConfig/archivio.csv");
 		
 	}
 

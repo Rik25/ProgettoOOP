@@ -30,20 +30,25 @@ public class CSVparsingclass {
 		int riga = 1;
 		String linea = "";
 		ArrayList<Record> records = new ArrayList<>();
+		
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile));
 		bufferedReader.readLine(); //salto la prima riga in quanto rappresenta il nome delle colonne
 		
 		while((linea = bufferedReader.readLine()) != null) {
 			String[] recuperato = linea.split(";");//Divido quando trovo ";"
+			
 			//Creo l'oggetto composto dai campi ottenuti dal file
 			Record oggettoRecuperato = new Record(recuperato[0].replaceAll("^\\s+",""), recuperato[1].replaceAll("^\\s+",""), 
 												recuperato[2].replaceAll("^\\s+",""), Double.parseDouble(recuperato[3]), 
 												Double.parseDouble(recuperato[4]), Double.parseDouble(recuperato[5]), 
 												Double.parseDouble(recuperato[6]), recuperato[7].replaceAll("^\\s+",""));
+			
 			records.add(oggettoRecuperato);
 			riga++;
 		}
+		
 		bufferedReader.close();
+		
 		return records;
 		
 	}
