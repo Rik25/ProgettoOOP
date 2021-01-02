@@ -24,7 +24,8 @@ public class CSVparsingclass {
 	 * @param csvFile percorso del file da cui recuperare le informazioni.
 	 * @return ArrayList di Record.
 	*/
-	//manca da gestire la data!!!
+	
+	@SuppressWarnings("deprecation")
 	public static ArrayList<Record> RunParsing(String csvFile){
 		
 		int riga = 1;
@@ -35,13 +36,26 @@ public class CSVparsingclass {
 		bufferedReader.readLine(); //salto la prima riga in quanto rappresenta il nome delle colonne
 		
 		while((linea = bufferedReader.readLine()) != null) {
-			String[] recuperato = linea.split(";");//Divido quando trovo ";"
+			String[] recuperato = linea.split(";");//divido quando trovo ";"
 			
-			//Creo l'oggetto composto dai campi ottenuti dal file
+			//creo l'oggetto composto dai campi ottenuti dal file
 			Record oggettoRecuperato = new Record(recuperato[0].replaceAll("^\\s+",""), recuperato[1].replaceAll("^\\s+",""), 
 												recuperato[2].replaceAll("^\\s+",""), Double.parseDouble(recuperato[3]), 
 												Double.parseDouble(recuperato[4]), Double.parseDouble(recuperato[5]), 
 												Double.parseDouble(recuperato[6]), recuperato[7].replaceAll("^\\s+",""));
+			
+			//parsing della data
+			
+			String s = recuperato[8]; //s conterrà la stringa con la data
+			String[] x = s.split(" "); //divido la stringa in sotto stringhe quando incontro uno spazio
+			String[] ora = x[3].split(":"); //divido la sottostringa "hh:mm:ss" in altre sottostringhe
+			
+			Date d = new Date(x[1] + "/" + x[2] + "/" + x[5]);// creo una nuova data con il mese, giorno e anno letti dal file
+			d.setHours(Integer.parseInt(ora[0]));// set dell'ora
+			d.setMinutes(Integer.parseInt(ora[1]));//set dei minuti
+			d.setSeconds(Integer.parseInt(ora[2]));//set dei secondi
+			
+			oggettoRecuperato.setData(d);// passo la data creata all'oggetto di tipo Record
 			
 			records.add(oggettoRecuperato);
 			riga++;
