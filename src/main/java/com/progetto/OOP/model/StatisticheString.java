@@ -1,5 +1,7 @@
 package com.progetto.OOP.model;
 
+import java.util.HashMap;
+
 /** Rappresenta la classe i cui oggetti sono la risposta 
  * alla richiesta Statistiche su valori String.
  * @author Riccardo Iobbi
@@ -7,30 +9,22 @@ package com.progetto.OOP.model;
 */
 
 public class StatisticheString extends Statistiche {
-	int percentuale;
-	int contatore;
+	HashMap<String,Integer> stats = new HashMap<String, Integer>();
 	
 	public StatisticheString() {
 		super();
 	}
 	
-	public StatisticheString(String field, int percentuale, int contatore) {
+	public StatisticheString(String field, HashMap<String,Integer> stats) {
 		super (field);
-		this.percentuale=percentuale;
-		this.contatore=contatore;
+		this.stats=stats;
 	}
 	
-	public int GetPercentuale() {
-		return percentuale;
+	public HashMap<String, Integer> GetStats() {
+		return stats;
 	}
-	public void SetPercentuale(int percentuale) {
-		this.percentuale=percentuale;
-	}
-	public int GetContatore() {
-		return contatore;
-	}
-	public void SetContatore(int contatore) {
-		this.contatore=contatore;
+	public void SetStats(HashMap<String,Integer>stats) {
+		this.stats=stats;
 	}
 
-}
+}	
