@@ -30,7 +30,7 @@ public class StatisticheStringhe extends StatisticheSuperclasse implements Stati
 		 * che non si ripetono.
 		 */
 		
-		ArrayList<String>list=new ArrayList();
+		ArrayList<String>list=new ArrayList<>();
 		list.add(records.get(0).getMeteo());
 		
 		for(int i=1; i<records.size(); i++) {
@@ -45,7 +45,7 @@ public class StatisticheStringhe extends StatisticheSuperclasse implements Stati
 		 * e che avranno come value la percentuale delle volte in cui è uscita quella descrizione.
 		 */
 		
-		HashMap<String,Integer>stats=new HashMap();
+		HashMap<String,Integer>stats=new HashMap<>();
 		
 		for (int j=0; j<list.size(); j++) {
 			
