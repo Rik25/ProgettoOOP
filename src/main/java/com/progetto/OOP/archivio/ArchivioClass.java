@@ -22,9 +22,20 @@ public class ArchivioClass {
 	private static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
 	
 	/**
-	 * Costruttore della classe, inizializza l'ArrayList di metadati.
+	 * 
+	 * @return ArrayList di tutti i record
 	 */
-	public ArchivioClass() {
+	
+	public static ArrayList<Record> getRecords(){
+		return records;
+	}
+	
+	/**
+	 * Metodo che popola l'ArrayList di metadata
+	 * @return ArrayList dei metadati
+	 */
+	
+	public static ArrayList<Metadata> getMetadata() {
 		metadata.add(new Metadata("name","Città","String"));
 		metadata.add(new Metadata("description","Meteo attuale","String"));
 		metadata.add(new Metadata("language","Lingua di visualizzazione dati","String"));
@@ -34,30 +45,12 @@ public class ArchivioClass {
 		metadata.add(new Metadata("temp_max","Temperaura massima del giorno","Double"));
 		metadata.add(new Metadata("units","Unità di misura per la visualizzazione dei dati","String"));
 		metadata.add(new Metadata("date","Data e ora della richiesta","Date"));
-		
-	}
-	
-	/**
-	 * 
-	 * @return ArrayList di tutti i record
-	 */
-	
-	public ArrayList<Record> getRecords(){
-		return records;
-	}
-	
-	/**
-	 * 
-	 * @return ArrayList dei metadati
-	 */
-	
-	public ArrayList<Metadata> getMetadata() {
 		return metadata;
 		
 	}
 	
 	/**
-	 * Effettua la richiesta di parsing del file CSV e popola l'ArrayList di record
+	 * Set dei Record da file CSV
 	 */
 	
 	public static void setRecordCSV(){
