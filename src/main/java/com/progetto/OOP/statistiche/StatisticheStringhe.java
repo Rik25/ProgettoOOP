@@ -21,7 +21,7 @@ public class StatisticheStringhe extends StatisticheSuperclasse implements Stati
 		super(ListaRecord);
 	}
 	
-	public StatisticheString run() {
+	public StatisticheString run() { 
 		
 		StatisticheString statisticheSpecifiche = new StatisticheString();
 		statisticheSpecifiche.SetField("Statistiche percentuale meteo");
