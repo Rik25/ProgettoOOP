@@ -4,6 +4,12 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroSingolo;
 
+/** Rappresenta la classe che implemeta il filtro per il campo Temp
+ * con operatore: "maggiore" 
+ * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
+*/
+
 public class filterTempGreater extends FiltroSingolo implements Filtro  {
 	
 	public filterTempGreater (Object parametro) {
