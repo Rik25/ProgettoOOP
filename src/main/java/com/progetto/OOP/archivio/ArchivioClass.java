@@ -40,7 +40,7 @@ public class ArchivioClass {
 		metadata.add(new Metadata("description","Meteo attuale","String"));
 		metadata.add(new Metadata("language","Lingua di visualizzazione dati","String"));
 		metadata.add(new Metadata("temp","Temperatura attuale","Double"));
-		metadata.add(new Metadata("feels like","Temperatura percepita","Double"));
+		metadata.add(new Metadata("perc","Temperatura percepita","Double"));
 		metadata.add(new Metadata("temp_min","Tempereatura minima del giorno","Double"));
 		metadata.add(new Metadata("temp_max","Temperaura massima del giorno","Double"));
 		metadata.add(new Metadata("units","Unità di misura per la visualizzazione dei dati","String"));
