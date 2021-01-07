@@ -1,0 +1,21 @@
+package com.progetto.OOP.filtri;
+
+import com.progetto.OOP.model.Record;
+import com.progetto.OOP.other.Filtro;
+import com.progetto.OOP.other.FiltroSingolo;
+
+public class filterTempGreater extends FiltroSingolo implements Filtro  {
+	
+	public filterTempGreater (Object parametro) {
+		super(parametro);
+	}
+	
+	public boolean filtra(Record record) {
+		if(record.getTemp() > parametro)
+			return true;
+		else
+			return false;
+		
+	}
+
+}
