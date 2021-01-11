@@ -41,7 +41,7 @@ public class FiltroSingolo {
 	 * set Overload
 	 * @param parametro
 	 */
-	public void setParametro(int parametro) {
+	public void setParametro(double parametro) {
 		this.parametro = parametro;
 	}
 	
