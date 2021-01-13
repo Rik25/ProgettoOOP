@@ -10,9 +10,9 @@ import com.progetto.OOP.other.FiltroString;
  * @author Lorenzo Benenchia
 */
 
-public class filterLanguageNotin extends FiltroString implements Filtro {
+public class filterLanguageNotIncluded extends FiltroString implements Filtro {
 	
-	public filterLanguageNotin(Object parametri) {
+	public filterLanguageNotIncluded(Object parametri) {
 		super(parametri);
 	}
 	
