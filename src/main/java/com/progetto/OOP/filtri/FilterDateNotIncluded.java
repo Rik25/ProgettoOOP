@@ -6,20 +6,20 @@ import com.progetto.OOP.other.FiltroDataDoppio;
 import com.progetto.OOP.model.Record;
 
 /**
- * Rappresenta la classe che si occupa d filtrare le date con operatore: "incluso tra"
+ * Rappresenta la classe che si occupa di filtrare le date con operatore: "non incluso tra"
  * @author Riccardo Iobbi
  * @author Lorrenzo Benenchia
  *
  */
 
-public class filterDateIncluded extends FiltroDataDoppio implements Filtro{
+public class FilterDateNotIncluded extends FiltroDataDoppio implements Filtro{
 	
-	public filterDateIncluded(Object parametri) {
+	public FilterDateNotIncluded(Object parametri) {
 		super(parametri);
 	}
 	
 	public boolean filtra(Record record) {
-		if(parametro1.before(record.getData()) && parametro2.after(record.getData()))
+		if(parametro1.after(record.getData()) || parametro2.before(record.getData()))
 			return true;
 		else
 			return false;

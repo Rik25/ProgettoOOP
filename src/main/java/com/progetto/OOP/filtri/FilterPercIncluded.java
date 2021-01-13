@@ -4,20 +4,19 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroDoppio;
 
-/** Rappresenta la classe che implemeta il filtro per il campo temp_min
+/** Rappresenta la classe che implemeta il filtro per il campo Perc
  * con operatore: "incluso tra" 
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
-
-public class filterTempMinIncluded extends FiltroDoppio implements Filtro {
+public class FilterPercIncluded extends FiltroDoppio implements Filtro {
 	
-	public filterTempMinIncluded(Object parametri) {
+	public FilterPercIncluded(Object parametri) {
 		super(parametri);
 	}
 	
 	public boolean filtra(Record record) {
-		if(record.getT_min() >= parametro1 && record.getT_min() <= parametro2)
+		if(record.getPerc() >= parametro1 && record.getPerc() <= parametro2)
 			return true;
 		else
 			return false;

@@ -4,22 +4,22 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroString;
 
-/** Rappresenta la classe che implemeta il filtro per il campo citta
+/** Rappresenta la classe che implemeta il filtro per il campo units
  * con operatore: "corrisponde a"
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class filterCittaIncluded extends FiltroString implements Filtro {
+public class FilterUnitsIncluded extends FiltroString implements Filtro {
 	
-	public filterCittaIncluded(Object parametri) {
+	public FilterUnitsIncluded(Object parametri) {
 		super(parametri);
 	}
 	
 	public boolean filtra(Record record) {
 		
 		for(String s : param) {
-			if(record.getCitta().equals(s)) {
+			if(record.getUnita().equals(s)) {
 				return true;
 			}
 		}

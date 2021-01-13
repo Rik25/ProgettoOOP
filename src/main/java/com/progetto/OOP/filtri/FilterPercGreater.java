@@ -1,27 +1,26 @@
 package com.progetto.OOP.filtri;
-
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroSingolo;
 
-/** Rappresenta la classe che implemeta il filtro per il campo temp_max
- * con operatore: "minore di" 
+/** Rappresenta la classe che implemeta il filtro per il campo Perc
+ * con operatore: "maggiore di" 
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class filterTempMaxLess extends FiltroSingolo implements Filtro {
+public class FilterPercGreater extends FiltroSingolo implements Filtro {
 	
-	public filterTempMaxLess(Object parametro) {
+	public FilterPercGreater(Object parametro) {
 		super(parametro);
 	}
 	
 	public boolean filtra(Record record) {
-		
-		if (record.getT_max() < parametro)
+		if(record.getPerc() > parametro)
 			return true;
 		else
 			return false;
+		
 	}
 
 }

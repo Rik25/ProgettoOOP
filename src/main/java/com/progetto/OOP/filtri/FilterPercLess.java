@@ -10,9 +10,9 @@ import com.progetto.OOP.other.FiltroSingolo;
  * @author Lorenzo Benenchia
 */
 
-public class filterPercLess extends FiltroSingolo implements Filtro {
+public class FilterPercLess extends FiltroSingolo implements Filtro {
 	
-	public filterPercLess(Object parametro) {
+	public FilterPercLess(Object parametro) {
 		super(parametro);
 	}
 	

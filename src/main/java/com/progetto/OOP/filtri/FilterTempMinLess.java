@@ -2,22 +2,22 @@ package com.progetto.OOP.filtri;
 
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
-import com.progetto.OOP.other.FiltroDoppio;
+import com.progetto.OOP.other.FiltroSingolo;
 
 /** Rappresenta la classe che implemeta il filtro per il campo temp_min
- * con operatore: "non incluso tra" 
+ * con operatore: "minore di" 
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class filterTempMinNotIncluded extends FiltroDoppio implements Filtro {
+public class FilterTempMinLess extends FiltroSingolo implements Filtro{
 	
-	public filterTempMinNotIncluded(Object parametri) {
-		super(parametri);
+	public FilterTempMinLess(Object parametro) {
+		super(parametro);
 	}
 	
 	public boolean filtra(Record record) {
-		if(record.getT_min() <= parametro1 || record.getT_min() >= parametro2)
+		if(record.getT_min() < parametro)
 			return true;
 		else
 			return false;

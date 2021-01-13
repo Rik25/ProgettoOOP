@@ -4,26 +4,26 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroString;
 
-/** Rappresenta la classe che implemeta il filtro per il campo language
- * con operatore: "corrisponde a"
+/** Rappresenta la classe che implemeta il filtro per il campo description
+ * con operatore: "non corrisponde a"
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class filterLanguageIncluded extends FiltroString implements Filtro {
+public class FilterDescriptionNotIncluded extends FiltroString implements Filtro {
 	
-	public filterLanguageIncluded(Object parametri) {
+	public FilterDescriptionNotIncluded(Object parametri) {
 		super(parametri);
 	}
 	
 	public boolean filtra(Record record) {
 		
 		for(String s : param) {
-			if(record.getLingua().equals(s)) {
-				return true;
+			if(record.getMeteo().equals(s)) {
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }

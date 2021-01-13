@@ -5,23 +5,23 @@ import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroSingolo;
 
 /** Rappresenta la classe che implemeta il filtro per il campo Temp
- * con operatore: "minore di" 
+ * con operatore: "maggiore di" 
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class filterTempLess extends FiltroSingolo implements Filtro {
+public class FilterTempGreater extends FiltroSingolo implements Filtro  {
 	
-	public filterTempLess (Object parametro) {
+	public FilterTempGreater (Object parametro) {
 		super(parametro);
 	}
 	
 	public boolean filtra(Record record) {
-		
-		if(record.getTemp() < parametro)
+		if(record.getTemp() > parametro)
 			return true;
 		else
 			return false;
+		
 	}
 
 }
