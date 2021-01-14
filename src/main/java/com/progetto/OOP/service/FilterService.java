@@ -57,6 +57,13 @@ public class FilterService {
 		
 	}
 	
+	/**
+	 * Questo metodo filtra l'arraylist passato come parametro.
+	 * @param filtro filtro da applicare.
+	 * @param nonFiltrato ArrayList di record da filtrare.
+	 * @return ArrayList di record filtrato.
+	 */
+	
 	public static ArrayList<Record> runFiltro(Filtro filtro, ArrayList<Record> nonFiltrato){
 
 		ArrayList<Record> filtrato = new ArrayList<Record>();

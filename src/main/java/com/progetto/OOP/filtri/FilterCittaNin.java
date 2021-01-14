@@ -5,14 +5,14 @@ import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroString;
 
 /** Rappresenta la classe che implemeta il filtro per il campo citta
- * con operatore: "corrisponde a"
+ * con operatore: "non corrisponde a"
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class FilterCittaIncluded extends FiltroString implements Filtro {
+public class FilterCittaNin extends FiltroString implements Filtro {
 	
-	public FilterCittaIncluded(Object parametri) {
+	public FilterCittaNin(Object parametri) {
 		super(parametri);
 	}
 	
@@ -20,10 +20,10 @@ public class FilterCittaIncluded extends FiltroString implements Filtro {
 		
 		for(String s : param) {
 			if(record.getCitta().equals(s)) {
-				return true;
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }
