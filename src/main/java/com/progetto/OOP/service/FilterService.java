@@ -60,21 +60,44 @@ public class FilterService {
 	/**
 	 * Questo metodo filtra l'arraylist passato come parametro.
 	 * @param filtro filtro da applicare.
-	 * @param nonFiltrato ArrayList di record da filtrare.
+	 * @param nonFiltrato ArrayList di record precedente.
 	 * @return ArrayList di record filtrato.
 	 */
 	
-	public static ArrayList<Record> runFiltro(Filtro filtro, ArrayList<Record> nonFiltrato){
+	public static ArrayList<Record> runFiltroAND(Filtro filtro, ArrayList<Record> precedente){
 
 		ArrayList<Record> filtrato = new ArrayList<Record>();
 		
-		for(Record record :  nonFiltrato) {
+		for(Record record :  precedente) {
 
 			if(filtro.filtra(record))
 				filtrato.add(record);
 		}				
 		
 		return filtrato;
+	}
+	
+	/**
+	 * Questo metodo restitusce un ArrayList di Record composto dai record precedenti
+	 * con in aggiunta quelli che rispettano il filtro prendendoli dal database.
+	 * @param     filtro 
+	 * @param     precedente ArrayList di Record precedente. 
+	 * @return    ArrayList filtrato.
+	 */
+	
+	public static ArrayList<Record> runFilterOR(Filtro filtro, ArrayList<Record> precedente){
+
+		ArrayList<Record> filtrato = new ArrayList<Record>();
+		
+		for(Record record : records) {
+
+			if(filtro.filtra(record))
+				filtrato.add(record);
+		}	
+		
+		precedente.removeAll(filtrato);
+		precedente.addAll(filtrato);
+		return precedente;
 	}
 
 }
