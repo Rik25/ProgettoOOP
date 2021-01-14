@@ -85,7 +85,7 @@ public class FilterService {
 	 * @return    ArrayList filtrato.
 	 */
 	
-	public static ArrayList<Record> runFilterOR(Filtro filtro, ArrayList<Record> precedente){
+	public static ArrayList<Record> runFiltroOR(Filtro filtro, ArrayList<Record> precedente){
 
 		ArrayList<Record> filtrato = new ArrayList<Record>();
 		
