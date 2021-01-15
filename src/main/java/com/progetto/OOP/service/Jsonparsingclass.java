@@ -27,7 +27,7 @@ public class Jsonparsingclass {
 		    String colonna = entry.getKey();
 		    Object paramFiltro = entry.getValue();
 		    try {
-				filtrato = jsonParserOperator(colonna, paramFiltro, precedente);
+				filtrato = jsonParserOperatore(colonna, paramFiltro, precedente);
 			} catch (  SecurityException e) {
 
 				//throw new InternalGeneralException("Error in parsing I/O operation");
