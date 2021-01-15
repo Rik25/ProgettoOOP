@@ -9,6 +9,7 @@ import java.util.Date;
 public class Record {
 	
 	private String citta;
+	private String nazione;
 	private String meteo;
 	private String lingua;
 	private double temp;
@@ -20,8 +21,9 @@ public class Record {
 	
 	public Record() {}
 	
-	public Record(String citta, String meteo, String lingua, double temp, double perc, double t_min, double t_max, String unita) {
+	public Record(String citta, String nazione, String meteo, String lingua, double temp, double perc, double t_min, double t_max, String unita) {
 		this.citta = citta;
+		this.nazione = nazione;
 		this.meteo = meteo;
 		this.lingua = lingua;
 		this.temp = temp;
@@ -38,6 +40,14 @@ public class Record {
 
 	public void setCitta(String citta) {
 		this.citta = citta;
+	}
+
+	public String getNazione() {
+		return nazione;
+	}
+
+	public void setNazione(String nazione) {
+		this.nazione = nazione;
 	}
 
 	public String getMeteo() {

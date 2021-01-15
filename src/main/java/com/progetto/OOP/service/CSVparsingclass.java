@@ -40,13 +40,14 @@ public class CSVparsingclass {
 			
 			//creo l'oggetto composto dai campi ottenuti dal file
 			Record oggettoRecuperato = new Record(recuperato[0].replaceAll("^\\s+",""), recuperato[1].replaceAll("^\\s+",""), 
-												recuperato[2].replaceAll("^\\s+",""), Double.parseDouble(recuperato[3]), 
-												Double.parseDouble(recuperato[4]), Double.parseDouble(recuperato[5]), 
-												Double.parseDouble(recuperato[6]), recuperato[7].replaceAll("^\\s+",""));
+												recuperato[2].replaceAll("^\\s+",""), recuperato[3].replaceAll("^\\s+",""), 
+												Double.parseDouble(recuperato[4]), 
+												Double.parseDouble(recuperato[5]), Double.parseDouble(recuperato[6]), 
+												Double.parseDouble(recuperato[7]), recuperato[8].replaceAll("^\\s+",""));
 			
 			//parsing della data
 			
-			String s = recuperato[8]; //s conterrà la stringa con la data
+			String s = recuperato[9]; //s conterrà la stringa con la data
 			String[] x = s.split(" "); //divido la stringa in sotto stringhe quando incontro uno spazio
 			String[] ora = x[3].split(":"); //divido la sottostringa "hh:mm:ss" in altre sottostringhe
 			
