@@ -50,7 +50,7 @@ public class ArchivioClass {
 	 */
 	
 	public static void setRecordCSV(){
-		records = CSVparsingclass.RunParsing("FileConfig/archivio.csv");
+		records = CSVparsingclass.runParsing("FileConfig/archivio.csv");
 		
 	}
 
