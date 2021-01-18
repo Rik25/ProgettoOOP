@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import com.progetto.OOP.eccezioni.StatisticaNonTrovata;
 import com.progetto.OOP.other.StatisticheCalcolatore;
 import com.progetto.OOP.eccezioni.EccezioneInterna;
+import com.progetto.OOP.model.Record;
 
 
 /**Rappresenta la classe che gestisce le statistiche
