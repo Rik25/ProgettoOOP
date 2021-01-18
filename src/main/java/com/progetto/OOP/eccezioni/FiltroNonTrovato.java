@@ -8,7 +8,7 @@ package com.progetto.OOP.eccezioni;
 
 public class FiltroNonTrovato extends ClassNotFoundException {
 	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
 
 	public FiltroNonTrovato() {
 		super();

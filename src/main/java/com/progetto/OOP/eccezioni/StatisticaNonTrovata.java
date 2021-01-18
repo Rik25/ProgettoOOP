@@ -11,7 +11,7 @@ public class StatisticaNonTrovata extends ClassNotFoundException {
 	/** serialVersion aggiunta di default
 	 */
 	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 3L;
 
 	public StatisticaNonTrovata() {
 		super();
