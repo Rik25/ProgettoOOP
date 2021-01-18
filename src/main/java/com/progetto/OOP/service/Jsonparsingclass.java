@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.progetto.OOP.eccezioni.*;
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
+import org.json.*;
 
 public class Jsonparsingclass {
 	
@@ -79,6 +80,29 @@ public class Jsonparsingclass {
 		    }
 		}
 		return filtrato;	
+	}
+	/**
+	 * Metodo che permette di creare un Record facendo il parsing della Stringa in input
+	 * @param response Stringa da convertire
+	 * @return Record
+	 */
+	public static Record jsonApiParse(String response, String lingua, String unita) {
+		
+		String jsonString = response ;
+		JSONObject obj = new JSONObject(jsonString);
+		String citta = obj.getString("name");//recupero le info che mi servono
+		String nazione = obj.getJSONObject("sys").getString("country");
+		double temp = Double.parseDouble(obj.getJSONObject("main").getString("temp"));
+		double perc = Double.parseDouble(obj.getJSONObject("main").getString("feels_like"));
+		double t_min = Double.parseDouble(obj.getJSONObject("main").getString("temp_min"));
+		double t_max = Double.parseDouble(obj.getJSONObject("main").getString("temp_max"));
+		//il campo description si trova in un Array
+		JSONArray arr = obj.getJSONArray("weather");
+		String meteo = arr.getJSONObject(0).getString("description");
+		
+		Record recuperato = new Record(citta, nazione, meteo, lingua, temp, perc, t_min, t_max, unita);
+		return recuperato;
+		    
 	}
 
 }

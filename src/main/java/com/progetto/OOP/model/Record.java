@@ -21,7 +21,8 @@ public class Record {
 	
 	public Record() {}
 	
-	public Record(String citta, String nazione, String meteo, String lingua, double temp, double perc, double t_min, double t_max, String unita) {
+	public Record(String citta, String nazione, String meteo, String lingua, 
+			double temp, double perc, double t_min, double t_max, String unita) {
 		this.citta = citta;
 		this.nazione = nazione;
 		this.meteo = meteo;
