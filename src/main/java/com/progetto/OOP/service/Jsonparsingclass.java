@@ -86,11 +86,11 @@ public class Jsonparsingclass {
 	 * @param response Stringa da convertire
 	 * @return Record
 	 */
-	public static Record jsonApiParse(String response, String lingua, String unita) {
+	public static Record jsonApiParse(String response, String citta, String lingua, String unita) {
 		
 		String jsonString = response ;
 		JSONObject obj = new JSONObject(jsonString);
-		String citta = obj.getString("name");//recupero le info che mi servono
+		//recupero le info che mi servono
 		String nazione = obj.getJSONObject("sys").getString("country");
 		double temp = Double.parseDouble(obj.getJSONObject("main").getString("temp"));
 		double perc = Double.parseDouble(obj.getJSONObject("main").getString("feels_like"));

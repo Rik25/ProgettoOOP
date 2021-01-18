@@ -46,6 +46,10 @@ public class ArchivioClass {
 		
 	}
 	
+	public static void addRecord(Record record) {
+		records.add(record);
+	}
+	
 	/**
 	 * Set dei Record da file CSV
 	 */
