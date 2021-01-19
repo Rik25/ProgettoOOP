@@ -103,6 +103,7 @@ public class Jsonparsingclass {
 		
 		Record recuperato = new Record(citta, nazione, meteo, lingua, temp, perc, t_min, t_max, unita);
 		ArchivioClass.addRecord(recuperato);
+		ArchivioClass.saveToCSV();
 		return recuperato;
 		    
 	}
