@@ -1,5 +1,7 @@
 package com.progetto.OOP.other;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -16,10 +18,11 @@ public class FiltroDataDoppio {
 	
 	/** Costruttore 
 	 * @param parametri deve essere un ArrayList di Date di lunghezza 2.
+	 * @throws ParseException 
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
 	
-	public FiltroDataDoppio(Object parametri) {
+	public FiltroDataDoppio(Object parametri) throws ParseException {
 		
 		if(parametri instanceof ArrayList<?>) {
 			
@@ -27,14 +30,22 @@ public class FiltroDataDoppio {
 				throw new IndexOutOfBoundsException("2 Date ") ;
 			}
 												
-			if(((ArrayList<?>) parametri).get(0) instanceof Date) {
-				parametro1 = (Date) ((ArrayList<?>) parametri).get(0) ;
+			if(((ArrayList<?>) parametri).get(0) instanceof String) {
+				SimpleDateFormat formatter1=new SimpleDateFormat("dd/MM/yyyy");
+				Date date1 = null;
+				String appoggio1 = (String)((ArrayList<?>) parametri).get(0);
+				date1 = formatter1.parse(appoggio1);
+				parametro1 = date1 ;
 			}
 			else {
 				throw new IllegalArgumentException("Type: Date ");}
 					
-			if(((ArrayList<?>) parametri).get(1) instanceof Date) {
-				parametro2 = (Date) ((ArrayList<?>) parametri).get(1) ;
+			if(((ArrayList<?>) parametri).get(1) instanceof String) {
+				SimpleDateFormat formatter2=new SimpleDateFormat("dd/MM/yyyy");
+				Date date2 = null;
+				String appoggio2 = (String)((ArrayList<?>) parametri).get(0);
+				date2 = formatter2.parse(appoggio2);
+				parametro2 = date2 ;
 			}
 			else{
 				throw new IllegalArgumentException("Type: Date ");}			

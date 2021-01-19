@@ -1,5 +1,7 @@
 package com.progetto.OOP.other;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -15,14 +17,18 @@ public class FiltroDataSingolo {
 	/**
 	 * Costruttore della classe.
 	 * @param parametro che deve essere di tipo Date.
+	 * @throws ParseException 
 	 * @throws IllegalArgumentException se il parametro non è del tipo richiesto.
 	 */
 	
-	public FiltroDataSingolo(Object parametro) {
+	public FiltroDataSingolo(Object parametro) throws ParseException {
 		
-		if(parametro instanceof Date)
+		if(parametro instanceof String)
 		{
-			this.parametro = (Date) parametro;
+			SimpleDateFormat formatter=new SimpleDateFormat("dd/MM/yyyy");
+			Date date = null;
+			date=formatter.parse((String) parametro);
+			this.parametro = date;
 		}
 		else {
 			throw new IllegalArgumentException("Type: Date ");

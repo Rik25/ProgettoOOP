@@ -2,6 +2,9 @@ package com.progetto.OOP.filtri;
 
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroDataSingolo;
+
+import java.text.ParseException;
+
 import com.progetto.OOP.model.Record;
 
 /**
@@ -13,7 +16,7 @@ import com.progetto.OOP.model.Record;
 
 public class FilterDataLess extends FiltroDataSingolo implements Filtro{
 	
-	public FilterDataLess(Object parametro) {
+	public FilterDataLess(Object parametro) throws ParseException {
 		super(parametro);
 	}
 	

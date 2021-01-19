@@ -3,6 +3,9 @@ package com.progetto.OOP.filtri;
 
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroDataDoppio;
+
+import java.text.ParseException;
+
 import com.progetto.OOP.model.Record;
 
 /**
@@ -14,7 +17,7 @@ import com.progetto.OOP.model.Record;
 
 public class FilterDataNotIncluded extends FiltroDataDoppio implements Filtro{
 	
-	public FilterDataNotIncluded(Object parametri) {
+	public FilterDataNotIncluded(Object parametri) throws ParseException {
 		super(parametri);
 	}
 	
