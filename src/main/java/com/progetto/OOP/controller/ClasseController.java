@@ -56,7 +56,7 @@ public class ClasseController {
 		}
 	
      /** Metodo che risponde alla richiesta GET /metadata
-	 * @return un arrayList di metadata (oggetti)
+	 * @return un arrayList di metadata (object)
 	 */
 	
 	@RequestMapping(value="metadata", method=RequestMethod.GET)
@@ -65,7 +65,7 @@ public class ClasseController {
 	}
 	
 	/**Metodo che risponde alla richiesta GET /data
-	 * @return un arrayList di dati (oggetti Record)
+	 * @return un arrayList di Record (object)
 	 */
 	   
 	@RequestMapping(value="data", method=RequestMethod.GET)
