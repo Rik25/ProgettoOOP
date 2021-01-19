@@ -15,7 +15,7 @@ public class Jsonparsingclass {
 	
 
 	public static ArrayList<Record> jsonParserColonna(Object filtro) 
-	throws FiltroNonTrovato{
+	throws FiltroNonTrovato, FilterIllegalArgumentException, EccezioneInterna{
 		
 		ArrayList<Record> precedente = new ArrayList<Record>();
 		ArrayList<Record> filtrato = new ArrayList<Record>();
@@ -45,7 +45,7 @@ public class Jsonparsingclass {
 	public static ArrayList<Record> jsonParserOperatore(String colonna, 
 													   Object paramFiltro, 
 												       ArrayList<Record> precedente) 
-	throws FiltroNonTrovato {
+	throws FiltroNonTrovato, FilterIllegalArgumentException, EccezioneInterna {
 		
 		String type="";
 		Filtro filtro;
