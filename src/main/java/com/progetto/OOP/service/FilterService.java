@@ -4,13 +4,9 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import com.progetto.OOP.model.Record;
-import com.esame.exception.FilterIllegalArgumentException;
-import com.esame.exception.FilterNotFoundException;
-import com.esame.exception.InternalGeneralException;
-import com.esame.util.other.Filter;
 import com.progetto.OOP.archivio.ArchivioClass;
 import com.progetto.OOP.other.Filtro;
-import com.progetto.OOP.eccezioni.FiltroNonTrovato;
+import com.progetto.OOP.eccezioni.*;
 
 /**
  * Classe che gestisce i filtraggi
@@ -29,9 +25,10 @@ public class FilterService {
 	 * @param param parametro d'ingresso per il filtro selezionato
 	 * @return oggetto che implementa Filtro
 	 * @throws FiltroNonTrovato
+	 * @throws FilterIllegalArgumentException, EccezioneInterna 
 	 */
 	public static Filtro istanziaFiltro(String campo, String operatore, Object param)
-			throws FiltroNonTrovato{
+			throws FiltroNonTrovato, FilterIllegalArgumentException, EccezioneInterna{
 		
 		Filtro filtro;
 		String nomeFiltro = new String("Filter"+campo+operatore);
@@ -51,7 +48,24 @@ public class FilterService {
 	    	throw new FiltroNonTrovato("The filter in field: '"+campo+"' with operator: '"+
 	                                          operatore +"' does not exist");
 	    }
+		//sbagliate maiuscole e minuscole
+	    catch(NoClassDefFoundError e){
+	    	throw new FiltroNonTrovato(
+	    			"Error typing: '"+nomeFiltro+"' uppercase and lowercase error");
+	    }
 
+	    //costruttore chiamato da newInstance lancia un eccezione 
+	   	catch (InvocationTargetException e) {  
+	   		//genero una nuova eccezione 
+	   		throw new FilterIllegalArgumentException(e.getTargetException().getMessage()
+	   				+ " Expected in '"+campo+"'");
+	   	}
+		catch(LinkageError | NoSuchMethodException | SecurityException 
+		    	   | InstantiationException | IllegalAccessException e ) {
+		    	
+		    	e.printStackTrace();
+		    	throw new EccezioneInterna("try later");
+		    }
 		
 	    return filtro;
 		
