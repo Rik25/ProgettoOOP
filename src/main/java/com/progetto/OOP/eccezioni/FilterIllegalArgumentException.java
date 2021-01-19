@@ -1,5 +1,10 @@
 package com.progetto.OOP.eccezioni;
 
+/** Rappresenta un'eccezzione personalizzata di tipo IllegalArgumentException.
+ * @author Riccardo Iobbi
+ * @author Lorenzo Benenchia
+*/
+
 public class FilterIllegalArgumentException extends IllegalArgumentException{
 
 
