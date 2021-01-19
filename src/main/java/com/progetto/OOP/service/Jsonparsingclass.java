@@ -92,10 +92,10 @@ public class Jsonparsingclass {
 		JSONObject obj = new JSONObject(jsonString);
 		//recupero le info che mi servono
 		String nazione = obj.getJSONObject("sys").getString("country");
-		double temp = Double.parseDouble(obj.getJSONObject("main").getString("temp"));
-		double perc = Double.parseDouble(obj.getJSONObject("main").getString("feels_like"));
-		double t_min = Double.parseDouble(obj.getJSONObject("main").getString("temp_min"));
-		double t_max = Double.parseDouble(obj.getJSONObject("main").getString("temp_max"));
+		double temp = obj.getJSONObject("main").getDouble("temp");
+		double perc = obj.getJSONObject("main").getDouble("feels_like");
+		double t_min = obj.getJSONObject("main").getDouble("temp_min");
+		double t_max = obj.getJSONObject("main").getDouble("temp_max");
 		//il campo description si trova in un Array
 		JSONArray arr = obj.getJSONArray("weather");
 		String meteo = arr.getJSONObject(0).getString("description");
