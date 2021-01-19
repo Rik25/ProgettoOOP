@@ -105,7 +105,7 @@ public class CSVparsingclass {
 	 * @param csvFile percorso del file su cui salvare le informazioni.
 	*/
 	
-	public void saveToCSV(String csvFile) {
+	public static void saveToCSV(String csvFile) {
 		
 		ArrayList<Record> records = ArchivioClass.getRecords();
 		ArrayList<String>rows = new ArrayList<String>();

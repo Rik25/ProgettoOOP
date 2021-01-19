@@ -58,5 +58,9 @@ public class ArchivioClass {
 		records = CSVparsingclass.runParsing(csvFile);
 		
 	}
+	
+	public static void saveToCSV() {
+		CSVparsingclass.saveToCSV(csvFile);
+	}
 
 }

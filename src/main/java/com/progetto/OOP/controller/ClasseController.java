@@ -37,6 +37,7 @@ public class ClasseController {
 		@Scheduled(initialDelay = 900000, fixedRate = 3600000)
 		public void request() throws InterruptedException{
 			APIService.scheduledRequest();
+			ArchivioClass.saveToCSV();
 		}
 	
      /** Metodo che risponde alla richiesta GET /metadata
