@@ -6,6 +6,7 @@ import java.util.Map;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.progetto.OOP.archivio.ArchivioClass;
 import com.progetto.OOP.eccezioni.*;
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
@@ -101,6 +102,7 @@ public class Jsonparsingclass {
 		String meteo = arr.getJSONObject(0).getString("description");
 		
 		Record recuperato = new Record(citta, nazione, meteo, lingua, temp, perc, t_min, t_max, unita);
+		ArchivioClass.addRecord(recuperato);
 		return recuperato;
 		    
 	}
