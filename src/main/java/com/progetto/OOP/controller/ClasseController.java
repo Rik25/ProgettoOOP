@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.progetto.OOP.archivio.ArchivioClass;
 import com.progetto.OOP.eccezioni.EccezioneInterna;
+import com.progetto.OOP.eccezioni.FilterIllegalArgumentException;
 import com.progetto.OOP.eccezioni.FiltroNonTrovato;
 import com.progetto.OOP.eccezioni.StatisticaNonTrovata;
 import com.progetto.OOP.model.Metadata;
@@ -93,10 +94,12 @@ public class ClasseController {
 	 * @param filtro: json che contiene i filtri da applicare 
 	 * @return un ArrayList di Record filtrati secondo il filtro
 	 * @throws FiltroNonTrovato: errore di filtro non trovato
+	 * @throws EccezioneInterna 
+	 * @throws FilterIllegalArgumentException 
 	 */
 	
 	@RequestMapping(value="data", method=RequestMethod.POST )
-	public ArrayList<Record> getDataPost (@RequestBody Object filtro) throws FiltroNonTrovato{
+	public ArrayList<Record> getDataPost (@RequestBody Object filtro) throws FiltroNonTrovato, FilterIllegalArgumentException, EccezioneInterna{
 		
 		return Jsonparsingclass.jsonParserColonna(filtro);
 	}
