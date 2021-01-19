@@ -41,6 +41,9 @@ public class ClasseController {
 		}
 		/**
 		 * metodo che risponde alla richiesta GET /request
+		 * @param citta citta di cui si vuole avere il meteo
+		 * @param lingua lingua dei dati
+		 * @param unita unita di misura
 		 * @return record
 		 */
 		@RequestMapping(value="request", method=RequestMethod.GET)
