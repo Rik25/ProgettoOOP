@@ -30,10 +30,11 @@ import com.progetto.OOP.service.StatisticheService;
 public class ClasseController {
 	
 	/**
-	 * metodo eseguito ogni 15 min per effettuare la richiesta di dati all'API
+	 * metodo eseguito ogni ora per effettuare la richiesta di dati all'API,
+	 * verrà eseguito per la prima volta dopo 15 min dall'avvio del programma.
 	 * @throws InterruptedException
 	 */
-		@Scheduled(initialDelay = 900000, fixedRate = 900000)
+		@Scheduled(initialDelay = 900000, fixedRate = 3600000)
 		public void request() throws InterruptedException{
 			APIService.scheduledRequest();
 		}
