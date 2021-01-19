@@ -15,7 +15,7 @@ import com.progetto.OOP.model.Metadata;
 public class ArchivioClass {
 	private static ArrayList<Record> records = new ArrayList<Record>();
 	private static ArrayList<Metadata> metadata = new ArrayList<Metadata>();
-	static String csvFile = "FileConfig/archivio.csv";
+	private static String csvFile = "FileConfig/archivio.csv";
 	
 	/**
 	 * 

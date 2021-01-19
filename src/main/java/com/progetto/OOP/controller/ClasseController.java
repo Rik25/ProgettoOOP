@@ -2,6 +2,7 @@ package com.progetto.OOP.controller;
 
 import java.util.ArrayList;
 
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,6 +17,7 @@ import com.progetto.OOP.model.Metadata;
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.model.Statistiche;
 import com.progetto.OOP.other.StatisticheCalcolatore;
+import com.progetto.OOP.service.APIService;
 import com.progetto.OOP.service.Jsonparsingclass;
 import com.progetto.OOP.service.StatisticheService;
 
@@ -26,6 +28,15 @@ import com.progetto.OOP.service.StatisticheService;
 
 @RestController
 public class ClasseController {
+	
+	/**
+	 * metodo eseguito ogni 15 min per effettuare la richiesta di dati all'API
+	 * @throws InterruptedException
+	 */
+		@Scheduled(initialDelay = 900000, fixedRate = 900000)
+		public void request() throws InterruptedException{
+			APIService.scheduledRequest();
+		}
 	
      /** Metodo che risponde alla richiesta GET /metadata
 	 * @return un arrayList di metadata (oggetti)
