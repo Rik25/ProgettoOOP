@@ -9,7 +9,7 @@ import java.util.HashMap;
 */
 
 public class StatisticheString extends Statistiche {
-	HashMap<String,Integer> stats = new HashMap<String, Integer>();
+	HashMap<String,Integer> stats;
 	
 	public StatisticheString() {
 		super();

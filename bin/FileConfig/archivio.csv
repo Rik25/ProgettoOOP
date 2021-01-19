@@ -1,1 +1,7 @@
-citta;nazione;meteo;lingua;temp;perc;t_min;t_max;unita;data
+Citta;Nazione;Meteo;Lingua;Temp;Perc;t_min;t_max;unita;data
+Chiari;IT;foschia;it;1.95;-1.11;1.67;2.22;metric;Tue Jan 19 16:34:44 CET 2021;
+Como;IT;cielo coperto;it;3.93;-0.39;1.67;6.11;metric;Tue Jan 19 16:34:50 CET 2021;
+Ancona;IT;cielo sereno;it;10.88;6.73;10.0;12.0;metric;Tue Jan 19 16:34:55 CET 2021;
+Marcelli;IT;cielo coperto;it;5.04;3.69;1.11;12.22;metric;Tue Jan 19 16:35:01 CET 2021;
+Palermo;IT;cielo sereno;it;11.85;9.64;10.56;12.78;metric;Tue Jan 19 16:35:06 CET 2021;
+Ancona;IT;cielo sereno;it;10.88;6.73;10.0;12.0;metric;Tue Jan 19 16:36:36 CET 2021;
