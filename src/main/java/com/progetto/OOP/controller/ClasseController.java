@@ -35,9 +35,21 @@ public class ClasseController {
 	 * @throws InterruptedException
 	 */
 		@Scheduled(initialDelay = 900000, fixedRate = 3600000)
-		public void request() throws InterruptedException{
+		public void scheduledRequest() throws InterruptedException{
 			APIService.scheduledRequest();
 			ArchivioClass.saveToCSV();
+		}
+		/**
+		 * metodo che risponde alla richiesta GET /request
+		 * @return record
+		 */
+		@RequestMapping(value="request", method=RequestMethod.GET)
+		public Record getRequest(@RequestParam(value = "city") String citta,
+								@RequestParam(value = "lang") String lingua, 
+								@RequestParam(value = "unit") String unita) {
+			
+			return APIService.request(citta, lingua, unita);
+			
 		}
 	
      /** Metodo che risponde alla richiesta GET /metadata
