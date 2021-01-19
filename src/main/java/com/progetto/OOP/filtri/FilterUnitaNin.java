@@ -4,15 +4,15 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroString;
 
-/** Rappresenta la classe che implemeta il filtro per il campo units
+/** Rappresenta la classe che implemeta il filtro per il campo unita
  * con operatore: "corrisponde a"
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class FilterUnitsNin extends FiltroString implements Filtro {
+public class FilterUnitaNin extends FiltroString implements Filtro {
 	
-	public FilterUnitsNin(Object parametri) {
+	public FilterUnitaNin(Object parametri) {
 		super(parametri);
 	}
 	

@@ -4,21 +4,20 @@ import com.progetto.OOP.model.Record;
 import com.progetto.OOP.other.Filtro;
 import com.progetto.OOP.other.FiltroSingolo;
 
-/** Rappresenta la classe che implemeta il filtro per il campo temp_max
+/** Rappresenta la classe che implemeta il filtro per il campo t_min
  * con operatore: "minore di" 
  * @author Riccardo Iobbi
  * @author Lorenzo Benenchia
 */
 
-public class FilterTempMaxLess extends FiltroSingolo implements Filtro {
+public class FilterTMinLess extends FiltroSingolo implements Filtro{
 	
-	public FilterTempMaxLess(Object parametro) {
+	public FilterTMinLess(Object parametro) {
 		super(parametro);
 	}
 	
 	public boolean filtra(Record record) {
-		
-		if (record.getT_max() < parametro)
+		if(record.getT_min() < parametro)
 			return true;
 		else
 			return false;

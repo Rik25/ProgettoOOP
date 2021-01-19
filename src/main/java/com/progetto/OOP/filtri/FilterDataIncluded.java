@@ -12,9 +12,9 @@ import com.progetto.OOP.model.Record;
  *
  */
 
-public class FilterDateIncluded extends FiltroDataDoppio implements Filtro{
+public class FilterDataIncluded extends FiltroDataDoppio implements Filtro{
 	
-	public FilterDateIncluded(Object parametri) {
+	public FilterDataIncluded(Object parametri) {
 		super(parametri);
 	}
 	

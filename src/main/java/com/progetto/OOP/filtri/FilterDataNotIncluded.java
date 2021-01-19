@@ -12,9 +12,9 @@ import com.progetto.OOP.model.Record;
  *
  */
 
-public class FilterDateNotIncluded extends FiltroDataDoppio implements Filtro{
+public class FilterDataNotIncluded extends FiltroDataDoppio implements Filtro{
 	
-	public FilterDateNotIncluded(Object parametri) {
+	public FilterDataNotIncluded(Object parametri) {
 		super(parametri);
 	}
 	

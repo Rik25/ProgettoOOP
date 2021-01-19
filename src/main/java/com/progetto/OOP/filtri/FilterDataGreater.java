@@ -5,20 +5,20 @@ import com.progetto.OOP.other.FiltroDataSingolo;
 import com.progetto.OOP.model.Record;
 
 /**
- * Rappresenta la classe che si occupa d filtrare le date con operatore: "minore di / prima"
+ * Rappresenta la classe che si occupa d filtrare le date con operatore: "maggiore di / dopo"
  * @author Riccardo Iobbi
  * @author Lorrenzo Benenchia
  *
  */
 
-public class FilterDateLess extends FiltroDataSingolo implements Filtro{
+public class FilterDataGreater extends FiltroDataSingolo implements Filtro{
 	
-	public FilterDateLess(Object parametro) {
+	public FilterDataGreater(Object parametro) {
 		super(parametro);
 	}
 	
 	public boolean filtra(Record record) {
-		if(parametro.after(record.getData()))
+		if(parametro.before(record.getData()))
 			return true;
 		else
 			return false;
