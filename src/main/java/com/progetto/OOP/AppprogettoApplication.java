@@ -6,12 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.progetto.OOP.archivio.ArchivioClass;
 
 @SpringBootApplication
-public class ApPprogettoApplication {
+public class AppprogettoApplication {
 
 	public static void main(String[] args) {
 		ArchivioClass.setRecordCSV();
-		SpringApplication.run(ApPprogettoApplication.class, args);
+		SpringApplication.run(AppprogettoApplication.class, args);
 	}
 
 }
-//commento prova0
