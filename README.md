@@ -46,3 +46,6 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 
 ![model](/img/model.png)
 
+**com.progetto.OOP.service**
+
+![service](/img/service.png)
