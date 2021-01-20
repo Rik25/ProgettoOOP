@@ -32,5 +32,7 @@ Per effettuare le richieste è necessario utilizzare un ambiente di sviluppo API
 |POST             |/data                          |restituisce i record che rispettano i filtri specificati nel body     |
 |POST             |/statistiche?field="statistiche                          |restituisce le statistiche specificate filtrate secondo i filtri specificati nel body     |
 
-## Descrizione filtri
+## Diagramma classi
+*com.progetto.OOP.controller
+
 
