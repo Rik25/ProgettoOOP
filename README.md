@@ -1,6 +1,7 @@
 # ProgettoOOP
 
-Scopo del progetto 
+**Scopo del progetto**
+
 Il progetto che viene presentato ha come obiettivo quello di implementare un servizio meteo che faccia visualizzare tutte le informazioni relative alla temperatura e alle condizioni meteo di una città presa in esame, che restituisca statistiche su un particolare campo specificato e che esegua dei filtraggi specifici per restituirci specifiche informazioni. 
 Il sistema software che abbiamo utilizzato è SpringBoot. Grazie a questo WebService possiamo consentire agli utenti che si collegano di usufruire delle funzioni disponibili. SpringBoot è il software che lancia l'intera webApp comunicando con il client tramite il protocollo HTTP.
 
