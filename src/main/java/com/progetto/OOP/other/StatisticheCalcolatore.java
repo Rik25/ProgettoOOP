@@ -10,7 +10,6 @@ import com.progetto.OOP.model.Statistiche;
 public interface StatisticheCalcolatore {
 	
 	/** Metodo che calcola la statistica.
-	 * @returns l'oggetto che rappresentala statistica
 	 */
 	
 	public Statistiche run();

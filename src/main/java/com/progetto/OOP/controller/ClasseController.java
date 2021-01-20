@@ -111,7 +111,7 @@ public class ClasseController {
 	/**Metodo che risponde alla richiesta POST /data
 	 * @param filtro: json che contiene i filtri da applicare 
 	 * @return un ArrayList di Record filtrati secondo il filtro
-	 * @throws FiltroNonTrovato: errore di filtro non trovato
+	 * @throws FiltroNonTrovato : errore di filtro non trovato
 	 * @throws EccezioneInterna 
 	 * @throws FilterIllegalArgumentException 
 	 */
@@ -126,9 +126,9 @@ public class ClasseController {
 	 * @param statistica: campo sul quale si vuole eseguire la statistica
 	 * @param filtro: json contenenti i filtri da appliccare alla statistica
 	 * @return un oggi Statistiche contenente le statistiche specifiche filtrate
-	 * @throws FiltroNonTrovato: errore di filtro non trovato.
-	 * @throws StatisticaNonTrovata: errore di statistica non trovata
-	 * @throws EccezioneInterna: errori interni
+	 * @throws FiltroNonTrovato : errore di filtro non trovato.
+	 * @throws StatisticaNonTrovata : errore di statistica non trovata
+	 * @throws EccezioneInterna : errori interni
 	 */
 	
 	@RequestMapping(value="statistiche", method=RequestMethod.POST)

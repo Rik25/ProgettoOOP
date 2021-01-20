@@ -47,7 +47,7 @@ public class FiltroDoppio {
 	}
 	
 	/** Set
-	 * @param parametro deve essere un ArrayList di interi di lunghezza 2.
+	 * @param parametri deve essere un ArrayList di interi di lunghezza 2.
 	 * @throws IllegalArgumentException parametri non è del tipo richiesto. 
 	*/
 	

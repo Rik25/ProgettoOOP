@@ -25,7 +25,8 @@ public class FilterService {
 	 * @param param parametro d'ingresso per il filtro selezionato
 	 * @return oggetto che implementa Filtro
 	 * @throws FiltroNonTrovato
-	 * @throws FilterIllegalArgumentException, EccezioneInterna 
+	 * @throws FilterIllegalArgumentException 
+	 * @throws EccezioneInterna 
 	 */
 	public static Filtro istanziaFiltro(String campo, String operatore, Object param)
 			throws FiltroNonTrovato, FilterIllegalArgumentException, EccezioneInterna{
@@ -74,7 +75,7 @@ public class FilterService {
 	/**
 	 * Questo metodo filtra l'arraylist passato come parametro.
 	 * @param filtro filtro da applicare.
-	 * @param nonFiltrato ArrayList di record precedente.
+	 * @param precedente ArrayList di record precedente.
 	 * @return ArrayList di record filtrato.
 	 */
 	
