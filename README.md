@@ -63,3 +63,14 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 **N.B.** Nel package filtri sono presenti molte più classi di quelle mostrate nella figura esplicativa sotto. Le classi presenti sono esempi di filtri che ereditano dalle superclassi ed estendono l'interfaccia.
 
 ![filtri](/img/filtri.png)
+
+## Softwere utilizzati
+
+* [Eclipse](https://www.eclipse.org/) - ambiente di sviluppo integrato
+* [Spring Boot](https://spring.io/projects/spring-boot) - framework per  sviluppo applicazioni Java
+* [Maven](https://maven.apache.org/) - strumento di gestione di progetti
+
+## Autori
+
+* **Lorenzo Benenchia** - [GitHub](https://github.com/Rik25)
+* **Cristian Vitali** - [GitHub](https://github.com/Lollo1014)
