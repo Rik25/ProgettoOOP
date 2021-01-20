@@ -33,6 +33,10 @@ Per effettuare le richieste è necessario utilizzare un ambiente di sviluppo API
 |POST             |/statistiche?field="statistiche                          |restituisce le statistiche specificate filtrate secondo i filtri specificati nel body     |
 
 ## Diagramma classi
-*com.progetto.OOP.controller
-
+**com.progetto.OOP.controller**
+![classeController](/img/ClasseController.png)
+**com.progetto.OOP.archivio**
+![ArchivioClass](/img/ArchivioClass.png)
+**com.progetto.OOP.model**
+![model](/img/model.png)
 
