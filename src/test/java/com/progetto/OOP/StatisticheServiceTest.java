@@ -11,7 +11,12 @@ import com.progetto.OOP.service.StatisticheService;
 import com.progetto.OOP.archivio.ArchivioClass;
 import com.progetto.OOP.eccezioni.StatisticaNonTrovata;
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Classe per test StatisticheService
+ * @author Riccardo Iobbi
+ * @author Lorenzo Benechia
+ *
+ */
 public class StatisticheServiceTest {
 	@BeforeEach
 	void setUp() throws Exception {

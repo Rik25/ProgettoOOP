@@ -10,9 +10,9 @@ import com.progetto.OOP.other.FiltroDoppio;
  * @author Lorenzo Benenchia
 */
 
-public class filterTMaxNotIncluded extends FiltroDoppio implements Filtro{
+public class FilterTMaxNotIncluded extends FiltroDoppio implements Filtro{
 	
-	public filterTMaxNotIncluded(Object parametri) {
+	public FilterTMaxNotIncluded(Object parametri) {
 		super(parametri);
 	}
 	

@@ -9,7 +9,12 @@ import com.progetto.OOP.eccezioni.FiltroNonTrovato;
 import com.progetto.OOP.service.FilterService;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Classe per test FilterService
+ * @author Riccardo Iobbi
+ * @author Lorenzo Benechia
+ *
+ */
 public class FilterServiceTest {
 	@BeforeEach
 	void setUp() throws Exception {
