@@ -17,6 +17,7 @@ import com.progetto.OOP.eccezioni.StatisticaNonTrovata;
 import com.progetto.OOP.model.Metadata;
 import com.progetto.OOP.model.Record;
 import com.progetto.OOP.model.Statistiche;
+import com.progetto.OOP.model.StatisticheString;
 import com.progetto.OOP.other.StatisticheCalcolatore;
 import com.progetto.OOP.service.APIService;
 import com.progetto.OOP.service.Jsonparsingclass;
