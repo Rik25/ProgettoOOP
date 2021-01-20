@@ -45,17 +45,19 @@ public class StatisticheStringhe extends StatisticheSuperclasse implements Stati
 		 * e che avranno come value la percentuale delle volte in cui è uscita quella descrizione.
 		 */
 		
-		HashMap<String,Integer>stats=new HashMap<>();
-		
+		HashMap<String, Integer>stats=new HashMap<>();
+		int contatore;
+		int percentuale;
+		String confronto;
 		for (int j=0; j<list.size(); j++) {
 			
-			int contatore=0;
-			
-			for(int k=0; k<records.size(); k++) {
-				if(records.get(k).getMeteo()==list.get(j)) contatore++;
+			contatore = 0;
+			confronto = list.get(j);
+			for(Record r : records) {
+				if(r.getMeteo().equals(confronto)) contatore++;
 			}
 			
-			int percentuale = (int)(contatore/records.size())*100;
+			percentuale = (contatore*100)/records.size();
 			
 			stats.put(list.get(j), percentuale);
 			

@@ -9,13 +9,13 @@ import java.util.HashMap;
 */
 
 public class StatisticheString extends Statistiche {
-	HashMap<String,Integer> stats;
+	HashMap<String, Integer> stats;
 	
 	public StatisticheString() {
 		super();
 	}
 	
-	public StatisticheString(String field, HashMap<String,Integer> stats) {
+	public StatisticheString(String field, HashMap<String, Integer> stats) {
 		super (field);
 		this.stats=stats;
 	}
@@ -23,7 +23,7 @@ public class StatisticheString extends Statistiche {
 	public HashMap<String, Integer> GetStats() {
 		return stats;
 	}
-	public void SetStats(HashMap<String,Integer>stats) {
+	public void SetStats(HashMap<String, Integer>stats) {
 		this.stats=stats;
 	}
 

@@ -1,6 +1,7 @@
 package com.progetto.OOP.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -74,6 +75,22 @@ public class ClasseController {
 	public ArrayList<Record> getRecord(){
 		
 		return ArchivioClass.getRecords();
+	}
+	
+	/**Metodo che risponde alla richiesta GET /statistiche
+	 * @param statistica: campo sul quale si vuole eseguire la statistica (Es. NumPerc - statistiche numeriche sulle temperature percepite)
+	 * @return oggetto statistiche contenente le statistiche specificate
+	 * @throws StatisticaNonTrovata se la statistica inserita nel parametro non esiste
+	 * @throws EccezioneInterna dovuta ad errori interni.
+	 */
+	
+	@RequestMapping(value="statistichestring", method=RequestMethod.GET)
+	public HashMap<String, Integer> getStatisticheString(@RequestParam(value = "field") String statistica) throws StatisticaNonTrovata, EccezioneInterna {
+		
+		ArrayList<Record> records = ArchivioClass.getRecords();
+		StatisticheCalcolatore sc = StatisticheService.instanceStatisticheCalcolatore(statistica, records);
+		StatisticheString ss = (StatisticheString) sc.run();
+		return ss.GetStats();
 	}
 	
 	/**Metodo che risponde alla richiesta GET /statistiche
