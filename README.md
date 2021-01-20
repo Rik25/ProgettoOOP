@@ -49,3 +49,7 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 **com.progetto.OOP.service**
 
 ![service](/img/service.png)
+
+**com.progetto.OOP.eccezioni**
+
+![eccezioni](/img/eccezioni.png)
