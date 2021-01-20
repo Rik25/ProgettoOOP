@@ -143,7 +143,7 @@ public class APIService {
 							}
 					con.disconnect();
 					Record record = Jsonparsingclass.jsonApiParse(content, citta, lingua, unita);
-					ArchivioClass.addRecord(record);
+					
 	}
 	
 	public static String getParCitta() {
