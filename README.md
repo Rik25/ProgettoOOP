@@ -53,3 +53,7 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 **com.progetto.OOP.eccezioni**
 
 ![eccezioni](/img/eccezioni.png)
+
+**com.progetto.OOP.statistiche**
+
+![statistiche](/img/statistiche.png)
