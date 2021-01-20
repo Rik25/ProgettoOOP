@@ -64,7 +64,7 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 
 ![filtri](/img/filtri.png)
 
-## Softwere utilizzati
+## Software utilizzati
 
 * [Eclipse](https://www.eclipse.org/) - ambiente di sviluppo integrato
 * [Spring Boot](https://spring.io/projects/spring-boot) - framework per  sviluppo applicazioni Java
