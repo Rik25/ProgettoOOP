@@ -57,3 +57,9 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 **com.progetto.OOP.statistiche**
 
 ![statistiche](/img/statistiche.png)
+
+**com.progetto.OOP.filtri**
+
+**N.B.** Nel package filtri sono presenti molte più classi di quelle mostrate nella figura esplicativa sotto. Le classi presenti sono esempi di filtri che ereditano dalle superclassi ed estendono l'interfaccia.
+
+![filtri](/img/filtri.png)
