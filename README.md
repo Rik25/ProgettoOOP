@@ -19,7 +19,7 @@ Inoltre l'applicazione, dopo un quarto d'ora dall'avvio e successivamente ogni o
 ## Inizializzare l'applicazione
 Per scaricare l'applicazione nell'ide Eclipse dobbiamo anzitutto clonare la repository git nello show view di Eclipse. Successivamente incollare l'URL di questa repository e continuare. Dopo che il clone viene correttamente importato clicchiamo con il tasto destro del mouse e importiamo i progetti. A questo punto si può eseguire il codice cliccando con il tasto destro nel nome del progetto, selezionare "Run As" e successivamente "SpringBoot App". L'applicazione Web Service sarà in ascolto alla porta http://localhost:8080.
 ## Descrizione richieste e rotte
-Per effettuare le richieste è necessario utilizzare un ambiente di sviluppo API come "Postman". Richieste possibili:
+Per effettuare le richieste è necessario utilizzare un programma che permetta di eseguire chiamate HTTP (Es. Postman). Richieste possibili:
 
 
 |    TIPO        |rotta                          |descrizione                                |
