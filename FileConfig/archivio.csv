@@ -1,22 +1,24 @@
 Citta;Nazione;Meteo;Lingua;Temp;Perc;t_min;t_max;unita;data
+Ancona;IT;cielo sereno;it;5.0;4.0;1.0;10.11;metric;Mon Jan 4 10:13:34 CET 2021;
+Ancona;IT;poche nuvole;it;6.0;5.0;1.0;10.50;metric;Tue Jan 5 15:45:43 CET 2021;
+Ancona;IT;pioggia leggera;it;7.0;5.45;1.0;11.0;metric;Wed Jan 6 14:13:00 CET 2021;
+Ancona;IT;pioggia leggera;it;5.0;4.56;0.0;8.01;metric;Thu Jan 7 12:29:55 CET 2021;
+Ancona;IT;nubi sparse;it;5.0;3.22;4.0;6.11;metric;Fri Jan 8 10:45:36 CET 2021;
+Ancona;IT;pioggia leggera;it;5.0;2.50;3.0;6.00;metric;Sat Jan 9 16:09:01 CET 2021;
+Ancona;IT;nubi sparse;it;5.0;4.43;4.22;7.55;metric;Sun Jan 10 13:15:00 CET 2021;
+Ancona;IT;pioggia leggera;it;5.0;3.56;3.0;7.11;metric;Mon Jan 11 17:46:52 CET 2021;
+Ancona;IT;nubi sparse;it;3.09;1.23;0.50;6.02;metric;Tue Jan 12 11:33:54 CET 2021;
+Ancona;IT;cielo coperto;it;3.44;1.50;-2.0;8.11;metric;Wed Jan 13 19:05:12 CET 2021;
+Ancona;IT;cielo coperto;it;2.0;1.56;-1.0;7.01;metric;Thu Jan 14 10:29:10 CET 2021;
+Ancona;IT;nubi sparse;it;6.0;5.22;2.0;9.47;metric;Fri Jan 15 10:30:45 CET 2021;
+Ancona;IT;nubi sparse;it;3.0;2.50;-1.0;8.00;metric;Sat Jan 16 18:09:21 CET 2021;
+Ancona;IT;pioggia leggera;it;3.0;1.98;-1.00;7.21;metric;Sun Jan 17 20:16:22 CET 2021;
 Chiari;IT;foschia;it;1.95;-1.11;1.67;2.22;metric;Tue Jan 19 16:34:44 CET 2021;
 Como;IT;cielo coperto;it;3.93;-0.39;1.67;6.11;metric;Tue Jan 19 16:34:50 CET 2021;
 Ancona;IT;cielo sereno;it;10.88;6.73;10.0;12.0;metric;Tue Jan 19 16:34:55 CET 2021;
 Marcelli;IT;cielo coperto;it;5.04;3.69;1.11;12.22;metric;Tue Jan 19 16:35:01 CET 2021;
 Palermo;IT;cielo sereno;it;11.85;9.64;10.56;12.78;metric;Tue Jan 19 16:35:06 CET 2021;
 Ancona;IT;cielo sereno;it;10.88;6.73;10.0;12.0;metric;Tue Jan 19 16:36:36 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:07 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:09 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:10 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:10 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:11 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:12 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:12 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:13 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:13 CET 2021;
-Ancona;IT;poche nuvole;it;13.6;10.06;12.22;15.0;metric;Wed Jan 20 12:23:14 CET 2021;
 Milano;IT;pioggia leggera;it;2.57;-0.45;1.67;3.33;metric;Wed Jan 20 16:04:30 CET 2021;
-Milano;IT;pioggia leggera;it;2.57;-0.45;1.67;3.33;metric;Wed Jan 20 16:04:54 CET 2021;
 Como;IT;nubi sparse;it;2.93;-0.04;2.22;3.33;metric;Wed Jan 20 16:05:39 CET 2021;
-Como;IT;nubi sparse;it;2.93;-0.04;2.22;3.33;metric;Wed Jan 20 16:05:54 CET 2021;
-
+Ancona;IT;nubi sparse;it;9.81;9.08;7.0;11.11;metric;Thu Jan 21 10:13:34 CET 2021;
