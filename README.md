@@ -33,6 +33,11 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 |POST             |/data                          |restituisce i record che rispettano i filtri specificati nel body     |
 |POST             |/statistiche?field="statistiche                          |restituisce le statistiche specificate filtrate secondo i filtri specificati nel body     |
 
+**N.B** Qualora volessimo effettuare la richiesta: "GET /request?city="città"&lang="lingua"&unit="unita" " le lingue e unità di misura disponibili sono nei seguenti link.
+
+FILTRI DISPONIBILI (https://openweathermap.org/current#data)
+LINGUE DISPONIBILI (https://openweathermap.org/current#multi)
+
 ## Diagramma classi
 
 **com.progetto.OOP.controller**
