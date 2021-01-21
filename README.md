@@ -89,6 +89,10 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
   
   ![getStatistiche](/img/getStatistiche.png)
   
+  *POST /data* Il Controller esegue una prima chiamata JsonParesColonna() alla classe JsonParsingClass. Dopo aver crato il parametro (filtro) tramite il FilterService la JsonParsingClass esegue un runFiltro() nuovamente al FilterService che restituisce l'ArrayList<Record> dei record filtrati che viene infine restituito al Controller che lo trasforma in JSON e lo stampa. 
+  
+  ![postData](/img/postData.png)
+  
 ## Software utilizzati
 
 * [Eclipse](https://www.eclipse.org/) - ambiente di sviluppo integrato
