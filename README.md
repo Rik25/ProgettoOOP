@@ -69,29 +69,33 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 
 **Chiamate**
 
-*GET /request?city="città"&lang="lingua"&unit="unita"*  Il Controller eseuge una chiamata request() all'APIServiceClass che a sua volta esegue una chiamata JsonApiParse() alla classe JsonParsingClass la quale restituisce un Record al controller che lo trasforma in JSON e lo stampa .
+* **GET /request?city="città"&lang="lingua"&unit="unita"**   Il Controller eseuge una chiamata request() all'APIServiceClass che a sua volta esegue una chiamata JsonApiParse() alla classe JsonParsingClass la quale restituisce un Record al controller che lo trasforma in JSON e lo stampa .
 
 ![getRequest](/img/getRequest.png)
 
-*GET /metadata* Il controller esegue una chiamata getMetadata() all'ArchivioClass che restituisce un ArrayList<Metadata> che viene trasformato in JSON dal controller e stampato.
+* **GET /metadata** Il controller esegue una chiamata getMetadata() all'ArchivioClass che restituisce un ArrayList<Metadata> che viene trasformato in JSON dal controller e stampato.
 
 ![getMetadata](/img/getMetadata.png)
 
-*GET /data* Il controller esegue una chiamata getRecords() all'ArchivioClass che restituisce un ArrayList<Record> al controller che lo trasforma in JSON e lo stampa.
+* **GET /data** Il controller esegue una chiamata getRecords() all'ArchivioClass che restituisce un ArrayList<Record> al controller che lo trasforma in JSON e lo stampa.
 
 ![getData](/img/getData.png)
 
-*GET /statistichestring?field="statistica"* Il controller riceve l'ArrayList<Record> con la stessa chiamata utilizzata nel  *GET /data*. Ricaviamo il CalcolatoreStatistiche tramite un'istanza. Il controller esegue un ulteriore chiamata run() sul calcolatoreStatistiche che restituisce la StatisticaStringhe dal quale ricaviamo le statistiche specifiche che ricerchiamo tramite il metodo getStats().
+* **GET /statistichestring?field="statistica"** Il controller riceve l'ArrayList<Record> con la stessa chiamata utilizzata nel  *GET /data*. Ricaviamo il CalcolatoreStatistiche tramite un'istanza. Il controller esegue un ulteriore chiamata run() sul calcolatoreStatistiche che restituisce la StatisticaStringhe dal quale ricaviamo le statistiche specifiche che ricerchiamo tramite il metodo getStats().
   
   ![getStatisticheString](/img/getStatisticheString.PNG)
   
-  *GET /statistiche?field="statistica"* Il Controller esegue lo stesso lavoro che esegue alla richiesta *GET /statistichestring?field="statistica"*. Non è necessario però il metodo finale getStats in quanto il metodo run() ci restituisce direttamente un oggetto statistiche.
+  * **GET /statistiche?field="statistica"** Il Controller esegue lo stesso lavoro che esegue alla richiesta *GET /statistichestring?field="statistica"*. Non è necessario però il metodo finale getStats in quanto il metodo run() ci restituisce direttamente un oggetto statistiche.
   
   ![getStatistiche](/img/getStatistiche.png)
   
-  *POST /data* Il Controller esegue una prima chiamata JsonParesColonna() alla classe JsonParsingClass. Dopo aver crato il parametro (filtro) tramite il FilterService la JsonParsingClass esegue un runFiltro() nuovamente al FilterService che restituisce l'ArrayList<Record> dei record filtrati che viene infine restituito al Controller che lo trasforma in JSON e lo stampa. 
+  * **POST /data** Il Controller esegue una prima chiamata JsonParesColonna() alla classe JsonParsingClass. Dopo aver crato il parametro (filtro) tramite il FilterService la JsonParsingClass esegue un runFiltro() nuovamente al FilterService che restituisce l'ArrayList<Record> dei record filtrati che viene infine restituito al Controller che lo trasforma in JSON e lo stampa. 
   
   ![postData](/img/postData.png)
+  
+  * **POST /statistiche** Il Controller esegue lo stesso lavoro del POST /data. Quando viene restituito l'ArrayList<Record> (filtrato), crea un oggetto istanza di StatisticheCalcolatore con parametro ArrayList<Record>(filtrato) sul quale viene eseguito il comando run() che ci restituisce le statistiche filtrate.
+  
+  ![postStatistiche](/img/postStatistiche.png)
   
 ## Software utilizzati
 
