@@ -36,6 +36,7 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 **N.B** Qualora volessimo effettuare la richiesta: "GET /request?city="città"&lang="lingua"&unit="unita" " le lingue e unità di misura disponibili sono nei seguenti link.
 
 FILTRI DISPONIBILI (https://openweathermap.org/current#data)
+
 LINGUE DISPONIBILI (https://openweathermap.org/current#multi)
 
 ## Diagramma classi
