@@ -73,5 +73,5 @@ Per effettuare le richieste è necessario utilizzare un programma che permetta d
 
 ## Autori
 
-* **Lorenzo Benenchia** - [GitHub](https://github.com/Rik25)
-* **Cristian Vitali** - [GitHub](https://github.com/Lollo1014)
+* **Riccardo Iobbi** - [GitHub](https://github.com/Rik25)
+* **Lorenzo Benenchia** - [GitHub](https://github.com/Lollo1014)
