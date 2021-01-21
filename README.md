@@ -39,6 +39,27 @@ UNITA DI MISURA DISPONIBILI (https://openweathermap.org/current#data)
 
 LINGUE DISPONIBILI (https://openweathermap.org/current#multi)
 
+## Descrizione filtri
+
+| Nome operatore | Descrizione                                |Esempio                                     |
+|----------------|--------------------------------------------|--------------------------------------------|
+|Greater         |maggiore (valido per campi numerici)        |{"Temp":{"Greater":5.0}}            |
+|Less            |minore (valido per campi numerici)          |{"Perc":{"Less":20.0}}               |
+|Included        |compreso tra  (valido per campi numerici)   |{"TMax":{"Included":[5.0, 15.0]}}      |     
+|NotIncluded     |non compreso tra  (valido per campi numerici) |{"TMin":{"NotIncluded":[5.0, 15.0]}} |
+|In              |trova una corrispondeza con i valori dell'array (valido per stringhe)|	{"Citta":{"In":["Ancona"]}}|
+|Nin             |non trova una corrispondeza con i valori dell'array (valido per stringhe)|	{"Lingua":{"Nin":["it"]}}|
+
+**N.B.** Quando filtriamo con operatori numerici (Greater, Less, Included, NotIncluded) dobbiamo scrivere il parametro di paragone di tipo DOUBLE.
+
+L'esempio sottostante permette di combinare dei filtri tramite i comandi AND oppure OR. Essi vanno esplicitati nel secondo filtro dopo "type". 
+**Esempio**: 
+
+`{
+	"Temp":{"Included":[5.0,10.0]},
+	"TMax":{"type":"and","Less":10.0}    
+}`
+
 ## Diagramma classi
 
 **com.progetto.OOP.controller**
